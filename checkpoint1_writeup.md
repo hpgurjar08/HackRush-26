@@ -543,29 +543,7 @@ So a strong checkpoint-1 submission should include:
 - where it deviates
 - why pre-training may not be fully accurate for this specific benchmark
 
-## 8. Suggested Figures and Tables for the Checkpoint
-
-### Table 1
-
-Reference and predicted lattice constants of Si and Ge
-
-### Table 2
-
-Energy error metrics and force error metrics for pre-trained MACE
-
-### Figure 1
-
-Energy parity plot: reference vs MACE
-
-### Figure 2
-
-Force-component parity plot: reference vs MACE
-
-### Figure 3
-
-Energy versus lattice constant or energy versus volume curve for Si and Ge
-
-## 9. Key Technical Points to Mention in the Report
+## 10. Key Technical Points to Mention in the Report
 
 1. Tersoff and ReaxFF are usually benchmarked using published parameter files, not retrained in a short checkpoint workflow.
 2. MLIPs such as MACE and DeepMD learn the energy surface from data and return forces from energy gradients.
@@ -573,11 +551,11 @@ Energy versus lattice constant or energy versus volume curve for Si and Ge
 4. Energy should be reported per atom or relative to equilibrium.
 5. The same benchmark structures must be used for all models for a fair comparison.
 
-## 10. Conclusion
+## 11. Conclusion
 
 This checkpoint focuses on demonstrating a correct understanding of the problem and establishing a technically sound benchmark pipeline. The central idea is to compare classical analytical potentials and ML-based potentials on the same Si and Ge structures using lattice constant, internal energy, and forces as the evaluation targets. For checkpoint 1, the most appropriate first result is a comparison between reference data and a **pre-trained MACE model**, because that is explicitly required by the problem statement and provides a strong baseline for later comparison with DeepMD, Tersoff, and ReaxFF.
 
-## 11. Primary References
+## 12. Primary References
 
 1. MACE documentation: https://mace-docs.readthedocs.io/
 2. MACE paper: https://openreview.net/forum?id=YPpSngE-ZU
